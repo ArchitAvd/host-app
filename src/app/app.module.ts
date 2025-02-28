@@ -51,18 +51,18 @@ export class AppModule {
                 loadRemoteModule({
                   type: 'manifest',
                   remoteName: 'flight',
-                  exposedModule: './AppModule',
-                }).then((m) => m.AppModule),
+                  exposedModule: './FlightAppModule',
+                }).then((m) => m.FlightAppModule),
             },
-            // {
-            //   path: 'hotel',
-            //   loadChildren: () =>
-            //     loadRemoteModule({
-            //       type: 'manifest',
-            //       remoteName: 'hotel',
-            //       exposedModule: './AppModule',
-            //     }).then((m) => m.AppModule),
-            // },
+            {
+              path: 'hotel',
+              loadChildren: () =>
+                loadRemoteModule({
+                  type: 'manifest',
+                  remoteName: 'hotel',
+                  exposedModule: './HotelAppModule',
+                }).then((m) => m.HotelAppModule),
+            },
           ]),
         ],
       });

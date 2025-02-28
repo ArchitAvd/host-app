@@ -5,13 +5,32 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-button expand="block" color="primary" routerLink="/flight">
-    Flight Booking
-  </ion-button>
-  <ion-button expand="block" color="primary" routerLink="/hotel">
-    Hotel Booking
-  </ion-button>
+  <div class="card-container">
+    <ion-card>
+      <div class="image-container">
+        <img alt="Flight Image" src="../../assets/images/flight.jpg" />
+      </div>
 
+      <ion-card-content>
+        <ion-button expand="block" color="primary" routerLink="/flight">
+          Flight Booking
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="card-container">
+    <ion-card>
+      <div class="image-container">
+        <img alt="Hotel Image" src="../../assets/images/hotel.jpg" />
+      </div>
+
+      <ion-card-content>
+        <ion-button expand="block" color="primary" routerLink="/hotel">
+          Hotel Booking
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
   <h1>Welcome to My Ionic App</h1>
   <ion-card>
     <ion-card-header>
